@@ -10,25 +10,51 @@ public class Lista {
      * @param nodo Nodo
      */
     public void adicionarNodo(Nodo nodo){
-        if (nodo != null){
+        if (this.nodoPrincipal==null){
+            this.nodoPrincipal=nodo;
+        }else{
+            nodo.siguienteNodo=this.nodoPrincipal;
+            this.nodoPrincipal=nodo;
+        }
+
+
+
+    }
+
+       
+        
+
+       /*  if (nodo != null){
             //si nodo tiene algo esta lleno sino no existe lista 
             if (nodoPrincipal == null){
                 this.nodoPrincipal = nodo;
             }else{
                 this.nodoPrincipal.siguienteNodo = nodo;
-            }
+            }if(this.nodoPrincipal.siguienteNodo == null){
+                this.nodoPrincipal.siguienteNodo=nodo;
+            }else
+            this.nodoPrincipal.siguienteNodo=nodo;*/
+            
+            
            
 
-        }
+        
+    
+    
 
-    }
+    
     /**
      * imprime toda la lista
      */
     public void imprimir(){
-        System.out.println(this.nodoPrincipal);
-        System.out.println(this.nodoPrincipal.siguienteNodo);
         
+        Nodo nodoaux;
+        nodoaux=this.nodoPrincipal;
+        while(nodoaux!=null){
+            System.out.println(nodoaux.informacion);
+            nodoaux=nodoaux.siguienteNodo;
+            
+        }
 
 
     }
