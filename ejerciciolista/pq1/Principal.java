@@ -9,9 +9,9 @@ public class Principal{
 
         Lista lista = new Lista();
         Nodo nodo = new Nodo("Arsenal");
-        lista.adicionarNodo(nodo);
+        lista.adicionarNodoInicial(nodo);
         Nodo nodo1 = new Nodo("Chelsea");
-        lista.adicionarNodo(nodo1);
+        lista.adicionarNodoInicial(nodo1);
         lista.imprimir();
     }
 }

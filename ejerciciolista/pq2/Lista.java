@@ -9,7 +9,7 @@ public class Lista {
      * Adiciona un nodo al final de la lista
      * @param nodo Nodo
      */
-    public void adicionarNodo(Nodo nodo){
+    public void adicionarNodoInicial(Nodo nodo){
         if (this.nodoPrincipal==null){
             this.nodoPrincipal=nodo;
         }else{
@@ -19,6 +19,21 @@ public class Lista {
 
 
 
+    }
+    public void adicionarNodoFinal(Nodo nodo){
+        if (nodo != null){
+            //si nodo tiene algo esta lleno sino no existe lista 
+            if (nodoPrincipal == null){
+                this.nodoPrincipal = nodo;
+            }else{
+                Nodo aux = this.nodoPrincipal;
+                while(aux.siguienteNodo != null){
+                    aux = aux.siguienteNodo;
+                }
+                aux.siguienteNodo = nodo;
+            }
+           
+        }
     }
 
        
