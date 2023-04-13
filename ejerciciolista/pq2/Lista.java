@@ -90,6 +90,10 @@ public class Lista {
      * Si solo hay uno queda vacia
      */
     public void borrarUltimo(){
+        Nodo nodo=this.nodoPrincipal.siguienteNodo;
+        if(nodo!=null){
+            nodo=null;
+        }
 
     }
     /**
