@@ -78,6 +78,11 @@ public class Lista {
      * Si solo hay uno queda vacia
      */
     public void borrarPrimero(){
+        Nodo nodo=this.nodoPrincipal;
+    	if(nodo!=null) {
+    		nodo=null;
+    		this.nodoPrincipal=this.nodoPrincipal.siguienteNodo;
+        }
 
     }
     /**
