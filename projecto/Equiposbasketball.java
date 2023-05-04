@@ -3,7 +3,6 @@ public class Equiposbasketball {
 	public String nombreEquipo;
 	public int posicion;
 	public String ciudad;
-	public Object equiposOrdenado;
 	
 	
 	
