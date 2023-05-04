@@ -6,7 +6,7 @@ public class Principal {
 
     public static void main(String[] args) {
 		List<Equiposbasketball>  lista= new ArrayList <>();
-		Equiposbasketball equipo = new Equiposbasketball();
+		
 		Gestor gestor= new Gestor();
 		Scanner entrada=new Scanner(System.in);
 		
@@ -15,6 +15,8 @@ public class Principal {
 		int numeroEquipos = entrada.nextInt();
 		
 		for(int i=0;i<numeroEquipos;i++) {
+			Equiposbasketball equipo = new Equiposbasketball();
+			
 			System.out.println("Ingrese el nombre del equipo");
 			String nombre= entrada.next();
 			equipo.nombreEquipo=nombre;
